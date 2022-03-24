@@ -7,12 +7,6 @@ _class: lead
 backgroundImage: url('https://res.cloudinary.com/luggs/image/upload/v1634832661/GBS/bg1.png')
 ---
 
-<!-- _backgroundImage: url('https://res.cloudinary.com/luggs/image/upload/v1622877578/GBS/gbs.jpg') 
-_color: black;
-
-_footer: ""
-_paginate: false
--->
 
 <style scoped>
 h1 {
