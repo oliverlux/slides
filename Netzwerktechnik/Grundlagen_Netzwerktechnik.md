@@ -63,7 +63,40 @@ a {
 
 
 
+---
+# Definition Netzwerk
 
+> Ein Netzwerk stellt eine Infrastruktur dar, die Datenendgeräten die wahlfreie Kommunikation untereinander, den Datenaustausch und die Nutzung gemeinsamer Ressourcen und Dienste transparent ermöglicht.
+
+
+---
+# Netzwerkprotokolle
+
+- Festlegen der Modalitäten für den Aufbau und das Trennen von Verbindungen
+- Regeln zum Austausch der Daten und das Fehrhalten im Fehlerfall
+
+> Netzwerkprotokolle stellen die Schicht zwischen der Hardware und der jeweiligen Anwendung, resp. dem Anwender dar, der mit ihnen kommuniziert.
+
+---
+# TCP/IP (Transmission Control Protocol/Internet Protocol)
+
+- In den 60er Jahren erfunden
+- Grundzüge von heute sind 1974 geschaffen worden (RFC 675)
+- Grundlagenprotokolle der heutigen Netzwerkkommunikation
+
+---
+# Merkmale TCP/IP
+
+- Architekturunabhängige Netzwerktechnologie
+- Verbindungen von und zu allen Netzwerkteilnehmenden
+- Anwendungsprotokolle nach allgemeinen Standards
+- Vermittlungseben mit verbindungslosem Protokoll
+- Paketvermittlungsrechner als Netzknoten
+- Sicherungsfunktionen in Transportprotokollen
+
+---
+# OSI-Schichtenmodell
+![OSI-Modell](https://res.cloudinary.com/luggs/image/upload/v1648542358/Informatik/Modul%20117/osi.png)
 
 ---
 
