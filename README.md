@@ -2,6 +2,19 @@
 
 2022-05-12: INA4a (a link: [Link to other site](test.md))
 
+!!! note
+    You should note that the title will be automatically capitalized.
+    
+:warning: **If you are using mobile browser**: Be very careful here!
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+
 You can use the [editor on GitHub](https://github.com/oliverlux/slides/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
