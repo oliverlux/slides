@@ -1,6 +1,6 @@
 ## Welcome to GitHub Pages
 
-2022-05-12: INA4a
+2022-05-12: INA4a (a link: [Link to other site](test.md))
 
 You can use the [editor on GitHub](https://github.com/oliverlux/slides/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
