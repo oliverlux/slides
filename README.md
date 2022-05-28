@@ -18,6 +18,8 @@ graph TD;
 > Test
 > Other test
 
+![Screenshot](https://www.dropbox.com/s/48k7x31eyo7f3ax/2022-05-28_20-57-38.png?dl=0)
+
 
 You can use the [editor on GitHub](https://github.com/oliverlux/slides/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
