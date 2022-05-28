@@ -18,7 +18,7 @@ graph TD;
 > Test
 > Other test
 
-![Screenshot](https://www.dropbox.com/s/48k7x31eyo7f3ax/2022-05-28_20-57-38.png)
+![grafik](https://user-images.githubusercontent.com/15522717/170839440-da21c90c-8d56-4cfc-be0c-18ed1552080a.png)
 
 
 You can use the [editor on GitHub](https://github.com/oliverlux/slides/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
