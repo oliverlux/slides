@@ -80,17 +80,209 @@ Kopf - Herz - Hand (Pestalozzi) oder Wissen, Wollen und Können (Wollert)
 
 > Handlungskompetent ist, wer komplexe und zukunftsoffene Situationen eigeninitiativ, zielorientiert , fachgerecht, situationsgerecht und solzial verantwortlich bewältigt.
 
-&raquo; Berufsstolz</mark>
+`Berufsstolz`
+
+- Fachkompetenz
+- Methodenkompetenz
+- Sozialkompetenz
+- Selbstkompetenz
 
 ---
 
-# Weitere Informationen
+# Handlungskompetenzen formulieren
 
-- [Informationen cloud-init von IONOS](https://www.ionos.de/hilfe/server-cloud-infrastructure/serveradministration/serverkonfiguration-mit-cloud-init-allgemeine-informationen/)
-- [Warum ist cloud-init so cool](https://contabo.com/blog/de/was-ist-cloud-init/)
-- [cloud-init Dokumentation](https://cloudinit.readthedocs.io/en/latest/)
+Eine Formulierung von Handlungskompetenzen beinhaltet:
+- **Objekt:** Gegenstand der Handlungskompetenz
+- **Kontext:** Bezug zum Arbeitsgebiet
+- **Anforderung:**  Mindestanforderungen
+- **Aktion:** Beschreiben überprüfbare und beobachtbare Handlungen in Arbeitssituationen
+
+*Bsp: Die verschiedenen Elemente der Organisationsstruktur im Hinblick auf definierte Kriterien analysieren.*
+
+---
+
+# Stufen der Kompetenzerreichung
+
+1. Novizin, Anfänger
+2. Fortgeschrittener Anfänger
+3. Kompetenzstadium
+4. Gewandter Könner
+5. Expertin
+
+*Kompetenzstufenmodell nach Dreyfus&Dreyfus*
+
+---
+
+# Taxonomie für Handlungskompetenzen I
+
+Stufe    | Grad der Erfüllung 
+-------- | -------- 
+1   | Angeleitet   
+2   | Selbständig
+3   | Flexibel   
+4   | Analysierend
+5   | Bewertend   
+6   | Strategieorientiert 
+
+---
+
+# Taxonomie für Handlungskompetenzen II
+
+Schwierigkeitsgrad    | Grad der Erfüllung 
+-------- | -------- 
+1   | Grundlegende Aufgabenstellungen   
+2   | Erweiterte Aufgabenstellungen
+3   | Umfassende Aufgabenstellungen   
+4   | Neue, vielschichtige Aufgaben
+
+---
+
+# Taxonomie für Handlungskompetenzen III
+
+Arbeitsbereich    | Grad der Erfüllung 
+-------- | -------- 
+1   | Überschaubar und klar abgegrenzt   
+2   | Überschaubar und zum Teil erweitert
+3   | Umfassend, sich verändernd   
+4   | Erweitert und sich häufig verändert
+5   | Komplex, spezialisiert   
+
+---
+
+# Taxonomie für Handlungskompetenzen IV
+
+Anforderungen    | Grad der Erfüllung 
+-------- | -------- 
+1   | Unter Anleitung erfüllen   
+2   | Selbständig erfüllen
+3   | Geplant und angepasst erfüllen   
+4   | Fachgerecht erfüllen
+5   | Effizient erfüllen   
+
+---
+
+# Taxonomie für Handlungskompetenzen V
+
+Aktion    | Grad der Erfüllung 
+-------- | -------- 
+1   | Erfüllen   
+2   | Erkennen
+3   | Analysieren   
+4   | Bewerten
+5   | Strategieorientiert handeln   
+
+---
+
+# Leistungsniveaus 
+
+Leistungsniveau    | Verben
+-------- | -------- 
+1 - einfache Leistungen  | sortieren, hinweisen, ausstellen,  aufzeigen, unterscheiden, wiedergeben, bestimmen, anwenden, installieren,...   
+2 - erweiterte Leistungen   | analysieren, grafisch darstellen, einordnen, verändern, strukturieren, ordnen, prüfen, vergleichen,...
+3 - komplexe Leistungen   | bewerten, beurteilen, entwickeln, planen, gestalten, empfehlen, beweisen, auswählen,...   
 
 
+---
 
+# Grenzen der Überprüfbarkeit
 
+Performanz bezeichnet das Verhalten in einer Situation und ist direkt beobachtbar. Kompetenz hingegen lässt sich nicht einfach beobachten; sie liegt jedoch der Performanz zugrunde.
 
+Die Spitze des Eisbergs über der Wasseroberfläche ist beobachtbar (Performanz). Der Teil des Eisbergs im Wasser bleibt dem Auge verborgen (Kompetenz).
+
+---
+
+# Warum Prüfen
+
+- Feedback für Lernende
+- Feedback für Ausbildende
+- Lernen fördern
+- Leistungsbestätigung
+- Vorbereiten auf Stress
+- Vergleichbarkeit, Selektion und Qualitätssicherung
+- Motivation
+
+`Diagnose`, `Prognose` und `Eignung`
+
+---
+
+# Handlungskompetenzorientiert prüfen
+
+- Wissen, Können und Wollen muss überprüft werden
+- Mehrdimensionaler als konventionelle Prüfungen
+- Hohe Orientierung an der beruflichen Realität
+
+---
+
+# Grundlagen Prüfungserstellung
+
+Prüfungen müssen die folgenden Kriterien erfüllen:
+- gültig
+- zuverlässig
+- chancengerecht
+- ökonomisch
+
+```
+Ziele <-> Lehr-, Lernaktivitäten <-> Leistungsbeurteilung
+```
+
+---
+
+# Lernstandüberprüfung
+
+- Fremdprüfung
+- Selbstprüfung
+- Summative Lernstanderfassung (mit Note)
+- Formative Lernstanderfassung (ohne Note)
+- Prognostische Lernstanderfassung (Aufnahmeprüfung)
+
+---
+
+# Analyse von Handlungskompetenzen
+
+- Frageraster und Koordinationssystem in den Bereichen Fach-, Methoden-, Sozial- und Selbstkompetenz
+
+---
+
+# Schriftliche Prüfungsformen
+
+1. Offene und geschlossene Aufgabenstellungen
+2. Multiple oder Single Choice (M-S-C)
+3. Grössere schriftliche Arbeiten
+4. Texte
+5. Mini Cases (Reflexion vergangener, aktueller oder zukünftigen Handlungen)
+6. Fallstudien (Beurteilungsfall, Problemfindungsfall, Entscheidungsfall)
+7. Portfolio
+
+---
+
+# Mündliche Prüfungsformen
+
+1. Fachgespräch
+2. Rollenspiel
+3. Präsentation / Referate
+
+---
+
+# Praktische Prüfung
+
+1. Finden am Arbeitsplatz, Lehrwerkstatt, Labor o.ä. statt
+2. IPA
+3. VPA
+
+---
+
+# Technologiebasierte Prüfungen
+
+1. AR, VR
+2. Künstliche Intelligenz
+3. Smartphones und Tablets
+4. Computergestützte adaptive Verfahren
+
+---
+
+# Prüfungen in Gruppen
+
+1. Mündliche Gruppenprüfungen
+2. Schriftliche und praktische Gruppenprüfungen
+3. Prozess- und entwicklungsorientierte Prüfungen
