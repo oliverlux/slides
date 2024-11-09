@@ -249,7 +249,7 @@ Ziele <-> Lehr-, Lernaktivitäten <-> Leistungsbeurteilung
 1. Offene und geschlossene Aufgabenstellungen
 2. Multiple oder Single Choice (M-S-C)
 3. Grössere schriftliche Arbeiten
-4. Texte
+4. Texte schreiben
 5. Mini Cases (Reflexion vergangener, aktueller oder zukünftigen Handlungen)
 6. Fallstudien (Beurteilungsfall, Problemfindungsfall, Entscheidungsfall)
 7. Portfolio
@@ -286,3 +286,59 @@ Ziele <-> Lehr-, Lernaktivitäten <-> Leistungsbeurteilung
 1. Mündliche Gruppenprüfungen
 2. Schriftliche und praktische Gruppenprüfungen
 3. Prozess- und entwicklungsorientierte Prüfungen
+
+---
+
+# Beurteilung von Handlungskompetenzen
+
+## Wahrnehmungsverzerrer
+ - Halo-Effekt (Beeinflussung von Teileindrücken)
+ - Strenge-, Milde- oder Mitteeffekt
+ - Reihenfolgeeffekt
+ - Hypotheseneffekt ("wer nicht im Unterricht mitmacht ist auch nicht interessiert")
+ - Erwartungseffekt
+
+---
+
+# Beurteilungsnormen
+
+- Kriterien und Indikatoren
+    - Fachsprache, Umgang mit Fachsprache
+    - Vorgehen bei Planung
+    - Umsetzbarkeit / Machbarkeit der Lösung
+    - Kompetenzstufenmodell
+    - Berücksichtigung von Vorgaben
+- Sozial- und Individualnorm
+    - Entwicklung des Lernenden
+    - Vergleich in Gruppen
+
+---
+
+# Benotung (Note 1 - 6) I
+
+Note    | Beurteilung | Indikatoren 
+-------- | -------- | --------
+<2   | Nicht beurteilbar, sehr schwach | Fachwissen lückenhaft, keine Fachsprache, kein methodisches Vorgehen, Argumentation ohne Logik   
+3   | Ungenügend, schwach | unsichere Verwendung Fachsprache, wenig systematisches Vorgehen, Argumentation wenig nachvollziehbar
+4   | Genügend | Fachwissen meist genau, Fachsprache teils richtig, Argumentation ok   
+
+---
+
+# Benotung (Note 1 - 6) II
+
+Note    | Beurteilung | Indikatoren 
+-------- | -------- | --------
+5   | Gut | Fachwissen fundiert, meist sicher verwendete Fachsprache, methodisches Vorgehen, kleine logische Mängel 
+6   | Sehr gut | Fachwissen umfassend, sichere Verwendung Fachsprache, sehr systematisches Vorgehen, Argumentation nachvollziehbar und einleuchtend
+
+---
+
+# Tipps für Korrektur
+
+- Namen bedeckt halten oder nicht nachschauen 
+- Im Vorfeld Musterlösung mit Bepunktung erstellen
+- Eine Aufgabe ganz durch korrigieren
+- Reihenfolge der Prüfungen immer wieder anpassen
+- Bewertungshinweise auf Prüfung notieren (Nachvollziehbarkeit, auch für sich selbst)
+- Punkte erst zum Schluss zusammen zählen
+- Pausen beim Korrigieren einlegen
