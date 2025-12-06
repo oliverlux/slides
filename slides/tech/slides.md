@@ -5,19 +5,17 @@ theme: default
 # like them? see https://unsplash.com/collections/94734566/slidev
 background: https://res.cloudinary.com/luggs/image/upload/v1622877578/GBS/gbs.jpg
 # some information about your slides (markdown enabled)
-title: Präsentation Oliver Lux
+title: Präsentationen
 info: |
-  ## Slidev Starter Template
-  Test sli.dev
-
-  Learn more at [Sli.dev](https://sli.dev)
+  ## Allgemeines
+  
 # apply UnoCSS classes to the current slide
 class: text-center
 # https://sli.dev/features/drawing
 drawings:
   persist: false
 # slide transition: https://sli.dev/guide/animations.html#slide-transitions
-transition: slide-left
+transition: fade-out
 # enable MDC Syntax: https://sli.dev/features/mdc
 mdc: true
 # duration of the presentation
@@ -26,54 +24,20 @@ duration: 35min
 
 # Präsentation
 
-Modul 122
+Verschiedene Themen
 
 <div @click="$slidev.nav.next" class="mt-12 py-1" hover:bg="white op-10">
-  Press Space for next page <carbon:arrow-right />
+  Weiter <carbon:arrow-right />
 </div>
 
-<div class="abs-br m-6 text-xl">
-  <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="slidev-icon-btn">
-    <carbon:edit />
-  </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" class="slidev-icon-btn">
-    <carbon:logo-github />
-  </a>
+<div class="abs-br m-6 text-sm">
+  © Oliver Lux
 </div>
-
-<!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
--->
-
----
-transition: fade-out
----
-
-# What is Slidev?
-
-Slidev is a slides maker and presenter designed for developers, consist of the following features
-
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - themes can be shared and re-used as npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embed Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export to PDF, PPTX, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - virtually anything that's possible on a webpage is possible in Slidev
-<br>
-<br>
-
-Read more about [Why Slidev?](https://sli.dev/guide/why)
-
-<!--
-You can have `style` tag in markdown to override the style for the current page.
-Learn more: https://sli.dev/features/slide-scope-style
--->
 
 <style>
 h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-color: #ffffffff;
+  background-image: linear-gradient(45deg, #ffffffff, #fcfcfcff);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -82,556 +46,488 @@ h1 {
 }
 </style>
 
-<!--
-Here is another comment.
--->
-
 ---
-transition: slide-up
-level: 2
+transition: fade-out
+layout: cover
 ---
 
-# Navigation
+# Cloud
 
-Hover on the bottom-left corner to see the navigation's controls panel, [learn more](https://sli.dev/guide/ui#navigation-bar)
-
-## Keyboard Shortcuts
-
-|                                                     |                             |
-| --------------------------------------------------- | --------------------------- |
-| <kbd>right</kbd> / <kbd>space</kbd>                 | next animation or slide     |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd>                                       | previous slide              |
-| <kbd>down</kbd>                                     | next slide                  |
-
-<!-- https://sli.dev/guide/animations.html#click-animation -->
-<img
-  v-click
-  class="absolute -bottom-9 -left-7 w-80 opacity-50"
-  src="https://sli.dev/assets/arrow-bottom-left.svg"
-  alt=""
-/>
-<p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
-
----
-layout: two-cols
-layoutClass: gap-16
----
-
-# Table of contents
-
-You can use the `Toc` component to generate a table of contents for your slides:
-
-```html
-<Toc minDepth="1" maxDepth="1" />
-```
-
-The title will be inferred from your slide content, or you can override it with `title` and `level` in your frontmatter.
-
-::right::
-
-<Toc text-sm minDepth="1" maxDepth="2" />
-
----
-layout: image-right
-image: https://cover.sli.dev
----
-
-# Code
-
-Use code snippets and get the highlighting directly, and even types hover!
-
-```ts [filename-example.ts] {all|4|6|6-7|9|all} twoslash
-// TwoSlash enables TypeScript hover information
-// and errors in markdown code blocks
-// More at https://shiki.style/packages/twoslash
-import { computed, ref } from 'vue'
-
-const count = ref(0)
-const doubled = computed(() => count.value * 2)
-
-doubled.value = 2
-```
-
-<arrow v-click="[4, 5]" x1="350" y1="310" x2="195" y2="342" color="#953" width="2" arrowSize="1" />
-
-<!-- This allow you to embed external code blocks -->
-<<< @/snippets/external.ts#snippet
-
-<!-- Footer -->
-
-[Learn more](https://sli.dev/features/line-highlighting)
-
-<!-- Inline style -->
 <style>
-.footnotes-sep {
-  @apply mt-5 opacity-10;
-}
-.footnotes {
-  @apply text-sm opacity-75;
-}
-.footnote-backref {
-  display: none;
+h1 {
+  background-color: #ffffffff;
+  background-image: linear-gradient(45deg, #ffffffff, #fcfcfcff);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 </style>
 
-<!--
-Notes can also sync with clicks
-
-[click] This will be highlighted after the first click
-
-[click] Highlighted with `count = ref(0)`
-
-[click:3] Last click (skip two clicks)
--->
 
 ---
-level: 2
+transition: fade-out
 ---
 
-# Shiki Magic Move
+# Definition cloud-init 
 
-Powered by [shiki-magic-move](https://shiki-magic-move.netlify.app/), Slidev supports animations across multiple code snippets.
+> Cloud Images (AMI) sind Betriebssystemvorlagen und jede Instanz startet als identischer Klon. Jede Vorlage kann mittels `cloud-init` individuell angepasst werden und beim Start der Instanz können automatisiert Skripte abgearbeitet werden.
+<br><br>
+> Paket für die Initialisierung von Cloud Instanzen [Beschreibung von Canonical]
 
-Add multiple code blocks and wrap them with <code>````md magic-move</code> (four backticks) to enable the magic move. For example:
+---
+transition: fade-out
+---
 
-````md magic-move {lines: true}
-```ts {*|2|*}
-// step 1
-const author = reactive({
-  name: 'John Doe',
-  books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-})
-```
+# Möglichkeiten mit cloud-init
 
-```ts {*|1-2|3-4|3-4,8}
-// step 2
-export default {
-  data() {
-    return {
-      author: {
-        name: 'John Doe',
-        books: [
-          'Vue 2 - Advanced Guide',
-          'Vue 3 - Basic Guide',
-          'Vue 4 - The Mystery'
-        ]
-      }
-    }
-  }
+- Automatisches Installieren und Konfigurieren von Software
+- Anpassungen am Hostname
+- Konfiguration von SSH-Keys
+- Erstellen von Benutzern und Gruppen
+- Abarbeiten von Skripten
+- ...
+
+---
+transition: fade-out
+---
+
+# Weitere Informationen
+
+- [Informationen cloud-init von IONOS](https://www.ionos.de/hilfe/server-cloud-infrastructure/serveradministration/serverkonfiguration-mit-cloud-init-allgemeine-informationen/)
+- [Warum ist cloud-init so cool](https://contabo.com/blog/de/was-ist-cloud-init/)
+- [cloud-init Dokumentation](https://cloudinit.readthedocs.io/en/latest/)
+
+
+---
+transition: fade-out
+layout: cover
+---
+
+# Codierung
+
+<style>
+h1 {
+  background-color: #ffffffff;
+  background-image: linear-gradient(45deg, #ffffffff, #fcfcfcff);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
-```
+</style>
 
-```ts
-// step 3
-export default {
-  data: () => ({
-    author: {
-      name: 'John Doe',
-      books: [
-        'Vue 2 - Advanced Guide',
-        'Vue 3 - Basic Guide',
-        'Vue 4 - The Mystery'
-      ]
-    }
-  })
+---
+transition: fade-out
+---
+
+# Strichcode
+
+![Strichcode](https://res.cloudinary.com/luggs/image/upload/w_700/v1663425146/Informatik/Modul%20114/strichcode.png)
+
+---
+transition: fade-out
+---
+
+# EAN Codierung
+
+![EAN Codierung](https://res.cloudinary.com/luggs/image/upload/w_900/v1663424993/Informatik/Modul%20114/codierung-ean.png)
+
+---
+transition: fade-out
+---
+
+# EAN Codierung und Strichcode
+
+![EAN Codierung und Strichcode](https://res.cloudinary.com/luggs/image/upload/w_600/v1663424993/Informatik/Modul%20114/strichcode-ean.png)
+
+
+---
+transition: fade-out
+---
+
+# Aufbau EAN Code
+
+![EAN Code](https://res.cloudinary.com/luggs/image/upload/w_700/v1663424993/Informatik/Modul%20114/ean.png)
+
+
+---
+transition: fade-out
+layout: cover
+---
+
+# Handlungskompetenzen
+
+<style>
+h1 {
+  background-color: #ffffffff;
+  background-image: linear-gradient(45deg, #ffffffff, #fcfcfcff);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
-```
-
-Non-code blocks are ignored.
-
-```vue
-<!-- step 4 -->
-<script setup>
-const author = {
-  name: 'John Doe',
-  books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-}
-</script>
-```
-````
+</style>
 
 ---
-
-# Components
-
-<div grid="~ cols-2 gap-4">
-<div>
-
-You can use Vue components directly inside your slides.
-
-We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that you can use directly. And adding your custom components is also super easy.
-
-```html
-<Counter :count="10" />
-```
-
-<!-- ./components/Counter.vue -->
-<Counter :count="10" m="t-4" />
-
-Check out [the guides](https://sli.dev/builtin/components.html) for more.
-
-</div>
-<div>
-
-```html
-<Tweet id="1390115482657726468" />
-```
-
-<Tweet id="1390115482657726468" scale="0.65" />
-
-</div>
-</div>
-
-<!--
-Presenter note with **bold**, *italic*, and ~~striked~~ text.
-
-Also, HTML elements are valid:
-<div class="flex w-full">
-  <span style="flex-grow: 1;">Left content</span>
-  <span>Right content</span>
-</div>
--->
-
----
-class: px-20
+transition: fade-out
 ---
 
-# Themes
-
-Slidev comes with powerful theming support. Themes can provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
-
-<div grid="~ cols-2 gap-2" m="t-2">
-
-```yaml
----
-theme: default
----
-```
-
-```yaml
----
-theme: seriph
----
-```
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-default/01.png?raw=true" alt="">
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true" alt="">
-
-</div>
-
-Read more about [How to use a theme](https://sli.dev/guide/theme-addon#use-theme) and
-check out the [Awesome Themes Gallery](https://sli.dev/resources/theme-gallery).
-
----
-
-# Clicks Animations
-
-You can add `v-click` to elements to add a click animation.
-
-<div v-click>
-
-This shows up when you click the slide:
-
-```html
-<div v-click>This shows up when you click the slide.</div>
-```
-
-</div>
-
+# Definition Kompetenz
+#### Weinert
 <br>
 
-<v-click>
+> Potenzial geistige, personale und praktische Fähigkeiten für die Lösung von Problemen einsetzen. Kopf - Herz - Hand (Pestalozzi) oder Wissen, Wollen und Können (Wollert)
 
-The <span v-mark.red="3"><code>v-mark</code> directive</span>
-also allows you to add
-<span v-mark.circle.orange="4">inline marks</span>
-, powered by [Rough Notation](https://roughnotation.com/):
+<br><br>
 
-```html
-<span v-mark.underline.orange>inline markers</span>
-```
-
-</v-click>
-
-<div mt-20 v-click>
-
-[Learn more](https://sli.dev/guide/animations#click-animation)
-
-</div>
-
----
-
-# Motions
-
-Motion animations are powered by [@vueuse/motion](https://motion.vueuse.org/), triggered by `v-motion` directive.
-
-```html
-<div
-  v-motion
-  :initial="{ x: -80 }"
-  :enter="{ x: 0 }"
-  :click-3="{ x: 80 }"
-  :leave="{ x: 1000 }"
->
-  Slidev
-</div>
-```
-
-<div class="w-60 relative">
-  <div class="relative w-40 h-40">
-    <img
-      v-motion
-      :initial="{ x: 800, y: -100, scale: 1.5, rotate: -50 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-square.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ y: 500, x: -100, scale: 2 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-circle.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ x: 600, y: 400, scale: 2, rotate: 100 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-triangle.png"
-      alt=""
-    />
-  </div>
-
-  <div
-    class="text-5xl absolute top-14 left-40 text-[#2B90B6] -z-1"
-    v-motion
-    :initial="{ x: -80, opacity: 0}"
-    :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
-    Slidev
-  </div>
-</div>
-
-<!-- vue script setup scripts can be directly used in markdown, and will only affects current page -->
-<script setup lang="ts">
-const final = {
-  x: 0,
-  y: 0,
-  rotate: 0,
-  scale: 1,
-  transition: {
-    type: 'spring',
-    damping: 10,
-    stiffness: 20,
-    mass: 2
-  }
-}
-</script>
-
-<div
-  v-motion
-  :initial="{ x:35, y: 30, opacity: 0}"
-  :enter="{ y: 0, opacity: 1, transition: { delay: 3500 } }">
-
-[Learn more](https://sli.dev/guide/animations.html#motion)
-
-</div>
-
----
-
-# $\LaTeX$
-
-$\LaTeX$ is supported out-of-box. Powered by [$\KaTeX$](https://katex.org/).
-
-<div h-3 />
-
-Inline $\sqrt{3x-1}+(1+x)^2$
-
-Block
-$$ {1|3|all}
-\begin{aligned}
-\nabla \cdot \vec{E} &= \frac{\rho}{\varepsilon_0} \\
-\nabla \cdot \vec{B} &= 0 \\
-\nabla \times \vec{E} &= -\frac{\partial\vec{B}}{\partial t} \\
-\nabla \times \vec{B} &= \mu_0\vec{J} + \mu_0\varepsilon_0\frac{\partial\vec{E}}{\partial t}
-\end{aligned}
-$$
-
-[Learn more](https://sli.dev/features/latex)
-
----
-
-# Diagrams
-
-You can create diagrams / graphs from textual descriptions, directly in your Markdown.
-
-<div class="grid grid-cols-4 gap-5 pt-4 -mb-6">
-
-```mermaid {scale: 0.5, alt: 'A simple sequence diagram'}
-sequenceDiagram
-    Alice->John: Hello John, how are you?
-    Note over Alice,John: A typical interaction
-```
-
-```mermaid {theme: 'neutral', scale: 0.8}
-graph TD
-B[Text] --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
-```
-
-```mermaid
-mindmap
-  root((mindmap))
-    Origins
-      Long history
-      ::icon(fa fa-book)
-      Popularisation
-        British popular psychology author Tony Buzan
-    Research
-      On effectiveness<br/>and features
-      On Automatic creation
-        Uses
-            Creative techniques
-            Strategic planning
-            Argument mapping
-    Tools
-      Pen and paper
-      Mermaid
-```
-
-```plantuml {scale: 0.7}
-@startuml
-
-package "Some Group" {
-  HTTP - [First Component]
-  [Another Component]
-}
-
-node "Other Groups" {
-  FTP - [Second Component]
-  [First Component] --> FTP
-}
-
-cloud {
-  [Example 1]
-}
-
-database "MySql" {
-  folder "This is my folder" {
-    [Folder 3]
-  }
-  frame "Foo" {
-    [Frame 4]
-  }
-}
-
-[Another Component] --> [Example 1]
-[Example 1] --> [Folder 3]
-[Folder 3] --> [Frame 4]
-
-@enduml
-```
-
-</div>
-
-Learn more: [Mermaid Diagrams](https://sli.dev/features/mermaid) and [PlantUML Diagrams](https://sli.dev/features/plantuml)
-
----
-foo: bar
-dragPos:
-  square: 691,32,167,_,-16
----
-
-# Draggable Elements
-
-Double-click on the draggable elements to edit their positions.
-
+#### Boterf
 <br>
 
-###### Directive Usage
-
-```md
-<img v-drag="'square'" src="https://sli.dev/logo.png">
-```
-
-<br>
-
-###### Component Usage
-
-```md
-<v-drag text-3xl>
-  <div class="i-carbon:arrow-up" />
-  Use the `v-drag` component to have a draggable container!
-</v-drag>
-```
-
-<v-drag pos="663,206,261,_,-15">
-  <div text-center text-3xl border border-main rounded>
-    Double-click me!
-  </div>
-</v-drag>
-
-<img v-drag="'square'" src="https://sli.dev/logo.png">
-
-###### Draggable Arrow
-
-```md
-<v-drag-arrow two-way />
-```
-
-<v-drag-arrow pos="67,452,253,46" two-way op70 />
+> Kompetenz ist die Befähigung Ressourcen gezielt einzusetzen und zu kombinieren, um Arbeitssituationen zu bewältigen.
 
 ---
-src: ./pages/imported-slides.md
-hide: false
+transition: fade-out
 ---
 
+# Definition Handlungskompetenz
+
+> Handlungskompetent ist, wer komplexe und zukunftsoffene Situationen eigeninitiativ, zielorientiert , fachgerecht, situationsgerecht und solzial verantwortlich bewältigt.
+
+`Berufsstolz`
+
+- Fachkompetenz
+- Methodenkompetenz
+- Sozialkompetenz
+- Selbstkompetenz
+
+---
+transition: fade-out
 ---
 
-# Monaco Editor
 
-Slidev provides built-in Monaco Editor support.
+# Handlungskompetenzen formulieren
 
-Add `{monaco}` to the code block to turn it into an editor:
+Eine Formulierung von Handlungskompetenzen beinhaltet:
+- **Objekt:** Gegenstand der Handlungskompetenz
+- **Kontext:** Bezug zum Arbeitsgebiet
+- **Anforderung:**  Mindestanforderungen
+- **Aktion:** Beschreiben überprüfbare und beobachtbare Handlungen in Arbeitssituationen
 
-```ts {monaco}
-import { ref } from 'vue'
-import { emptyArray } from './external'
+*Bsp: Die verschiedenen Elemente der Organisationsstruktur im Hinblick auf definierte Kriterien analysieren.*
 
-const arr = ref(emptyArray(10))
+---
+transition: fade-out
+---
+
+
+# Stufen der Kompetenzerreichung
+
+1. Novizin, Anfänger
+2. Fortgeschrittener Anfänger
+3. Kompetenzstadium
+4. Gewandter Könner
+5. Expertin
+
+*Kompetenzstufenmodell nach Dreyfus&Dreyfus*
+
+---
+transition: fade-out
+---
+
+
+# Taxonomie für Handlungskompetenzen I
+
+Stufe    | Grad der Erfüllung 
+-- | -------- 
+1   | Angeleitet   
+2   | Selbständig
+3   | Flexibel   
+4   | Analysierend
+5   | Bewertend   
+6   | Strategieorientiert 
+
+---
+transition: fade-out
+---
+
+
+# Taxonomie für Handlungskompetenzen II
+
+Schwierigkeitsgrad    | Grad der Erfüllung 
+-- | -------- 
+1   | Grundlegende Aufgabenstellungen   
+2   | Erweiterte Aufgabenstellungen
+3   | Umfassende Aufgabenstellungen   
+4   | Neue, vielschichtige Aufgaben
+
+---
+transition: fade-out
+---
+
+
+# Taxonomie für Handlungskompetenzen III
+
+Arbeitsbereich    | Grad der Erfüllung 
+-- | -------- 
+1   | Überschaubar und klar abgegrenzt   
+2   | Überschaubar und zum Teil erweitert
+3   | Umfassend, sich verändernd   
+4   | Erweitert und sich häufig verändert
+5   | Komplex, spezialisiert   
+
+---
+transition: fade-out
+---
+
+
+# Taxonomie für Handlungskompetenzen IV
+
+Anforderungen    | Grad der Erfüllung 
+-- | -------- 
+1   | Unter Anleitung erfüllen   
+2   | Selbständig erfüllen
+3   | Geplant und angepasst erfüllen   
+4   | Fachgerecht erfüllen
+5   | Effizient erfüllen   
+
+---
+transition: fade-out
+---
+
+
+# Taxonomie für Handlungskompetenzen V
+
+Aktion    | Grad der Erfüllung 
+-- | -------- 
+1   | Erfüllen   
+2   | Erkennen
+3   | Analysieren   
+4   | Bewerten
+5   | Strategieorientiert handeln   
+
+---
+transition: fade-out
+---
+
+
+# Leistungsniveaus 
+
+Leistungsniveau    | Verben
+-- | -------- 
+1 - einfache Leistungen  | sortieren, hinweisen, ausstellen,  aufzeigen, unterscheiden, wiedergeben, bestimmen, anwenden, installieren,...   
+2 - erweiterte Leistungen   | analysieren, grafisch darstellen, einordnen, verändern, strukturieren, ordnen, prüfen, vergleichen,...
+3 - komplexe Leistungen   | bewerten, beurteilen, entwickeln, planen, gestalten, empfehlen, beweisen, auswählen,...   
+
+
+---
+transition: fade-out
+---
+
+
+# Grenzen der Überprüfbarkeit
+
+Performanz bezeichnet das Verhalten in einer Situation und ist direkt beobachtbar. Kompetenz hingegen lässt sich nicht einfach beobachten; sie liegt jedoch der Performanz zugrunde.
+
+Die Spitze des Eisbergs über der Wasseroberfläche ist beobachtbar (Performanz). Der Teil des Eisbergs im Wasser bleibt dem Auge verborgen (Kompetenz).
+
+---
+transition: fade-out
+---
+
+
+# Warum Prüfen
+
+- Feedback für Lernende
+- Feedback für Ausbildende
+- Lernen fördern
+- Leistungsbestätigung
+- Vorbereiten auf Stress
+- Vergleichbarkeit, Selektion und Qualitätssicherung
+- Motivation
+
+`Diagnose`, `Prognose` und `Eignung`
+
+---
+transition: fade-out
+---
+
+
+# Handlungskompetenzorientiert prüfen
+
+- Wissen, Können und Wollen muss überprüft werden
+- Mehrdimensionaler als konventionelle Prüfungen
+- Hohe Orientierung an der beruflichen Realität
+
+---
+transition: fade-out
+---
+
+
+# Grundlagen Prüfungserstellung
+
+Prüfungen müssen die folgenden Kriterien erfüllen:
+- gültig
+- zuverlässig
+- chancengerecht
+- ökonomisch
+
+```
+Ziele <-> Lehr-, Lernaktivitäten <-> Leistungsbeurteilung
 ```
 
-Use `{monaco-run}` to create an editor that can execute the code directly in the slide:
-
-```ts {monaco-run}
-import { version } from 'vue'
-import { emptyArray, sayHello } from './external'
-
-sayHello()
-console.log(`vue ${version}`)
-console.log(emptyArray<number>(10).reduce(fib => [...fib, fib.at(-1)! + fib.at(-2)!], [1, 1]))
-```
-
 ---
-layout: center
-class: text-center
+transition: fade-out
 ---
 
-# Learn More
 
-[Documentation](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/resources/showcases)
+# Lernstandüberprüfung
 
-<PoweredBySlidev mt-10 />
+- Fremdprüfung
+- Selbstprüfung
+- Summative Lernstanderfassung (mit Note)
+- Formative Lernstanderfassung (ohne Note)
+- Prognostische Lernstanderfassung (Aufnahmeprüfung)
+
+---
+transition: fade-out
+---
+
+
+# Analyse von Handlungskompetenzen
+
+- Frageraster und Koordinationssystem in den Bereichen Fach-, Methoden-, Sozial- und Selbstkompetenz
+
+---
+transition: fade-out
+---
+
+
+# Schriftliche Prüfungsformen
+
+1. Offene und geschlossene Aufgabenstellungen
+2. Multiple oder Single Choice (M-S-C)
+3. Grössere schriftliche Arbeiten
+4. Texte schreiben
+5. Mini Cases (Reflexion vergangener, aktueller oder zukünftigen Handlungen)
+6. Fallstudien (Beurteilungsfall, Problemfindungsfall, Entscheidungsfall)
+7. Portfolio
+
+---
+transition: fade-out
+---
+
+
+# Mündliche Prüfungsformen
+
+1. Fachgespräch
+2. Rollenspiel
+3. Präsentation / Referate
+
+---
+transition: fade-out
+---
+
+
+# Praktische Prüfung
+
+1. Finden am Arbeitsplatz, Lehrwerkstatt, Labor o.ä. statt
+2. IPA
+3. VPA
+
+---
+transition: fade-out
+---
+
+
+# Technologiebasierte Prüfungen
+
+1. AR, VR
+2. Künstliche Intelligenz
+3. Smartphones und Tablets
+4. Computergestützte adaptive Verfahren
+
+---
+transition: fade-out
+---
+
+
+# Prüfungen in Gruppen
+
+1. Mündliche Gruppenprüfungen
+2. Schriftliche und praktische Gruppenprüfungen
+3. Prozess- und entwicklungsorientierte Prüfungen
+
+---
+transition: fade-out
+---
+
+
+# Beurteilung von Handlungskompetenzen
+
+## Wahrnehmungsverzerrer
+ - Halo-Effekt (Beeinflussung von Teileindrücken)
+ - Strenge-, Milde- oder Mitteeffekt
+ - Reihenfolgeeffekt
+ - Hypotheseneffekt ("wer nicht im Unterricht mitmacht ist auch nicht interessiert")
+ - Erwartungseffekt
+
+---
+transition: fade-out
+---
+
+
+# Beurteilungsnormen
+
+- Kriterien und Indikatoren
+    - Fachsprache, Umgang mit Fachsprache
+    - Vorgehen bei Planung
+    - Umsetzbarkeit / Machbarkeit der Lösung
+    - Kompetenzstufenmodell
+    - Berücksichtigung von Vorgaben
+- Sozial- und Individualnorm
+    - Entwicklung des Lernenden
+    - Vergleich in Gruppen
+
+---
+transition: fade-out
+---
+
+
+# Benotung (Note 1 - 6) I
+
+Note    | Beurteilung | Indikatoren 
+-- | -------- | --------
+<2   | Nicht beurteilbar, sehr schwach | Fachwissen lückenhaft, keine Fachsprache, kein methodisches Vorgehen, Argumentation ohne Logik   
+3   | Ungenügend, schwach | unsichere Verwendung Fachsprache, wenig systematisches Vorgehen, Argumentation wenig nachvollziehbar
+4   | Genügend | Fachwissen meist genau, Fachsprache teils richtig, Argumentation ok   
+
+---
+transition: fade-out
+---
+
+
+# Benotung (Note 1 - 6) II
+
+Note    | Beurteilung | Indikatoren 
+-- | -------- | --------
+5   | Gut | Fachwissen fundiert, meist sicher verwendete Fachsprache, methodisches Vorgehen, kleine logische Mängel 
+6   | Sehr gut | Fachwissen umfassend, sichere Verwendung Fachsprache, sehr systematisches Vorgehen, Argumentation nachvollziehbar und einleuchtend
+
+---
+transition: fade-out
+---
+
+
+# Tipps für Korrektur
+
+- Namen bedeckt halten oder nicht nachschauen 
+- Im Vorfeld Musterlösung mit Bepunktung erstellen
+- Eine Aufgabe ganz durch korrigieren
+- Reihenfolge der Prüfungen immer wieder anpassen
+- Bewertungshinweise auf Prüfung notieren (Nachvollziehbarkeit, auch für sich selbst)
+- Punkte erst zum Schluss zusammen zählen
+- Pausen beim Korrigieren einlegen

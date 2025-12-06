@@ -1,79 +1,44 @@
 ---
 # try also 'default' to start simple
-theme: seriph
+theme: default
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-background: https://cover.sli.dev
+background: https://res.cloudinary.com/luggs/image/upload/v1765022012/Informatik/Allgemein/network.jpg
 # some information about your slides (markdown enabled)
-title: Welcome to Slidev
+title: Netzwerktechnik
 info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
-
-  Learn more at [Sli.dev](https://sli.dev)
+  ## Netzwerktechnik
+  Folien zu Netzwerktechnik
 # apply UnoCSS classes to the current slide
 class: text-center
 # https://sli.dev/features/drawing
 drawings:
   persist: false
 # slide transition: https://sli.dev/guide/animations.html#slide-transitions
-transition: slide-left
+transition: fade-out
 # enable MDC Syntax: https://sli.dev/features/mdc
 mdc: true
 # duration of the presentation
 duration: 35min
+
 ---
 
-# Welcome to Slidev
+# Netzwerktechnik
 
-Presentation slides for developers
+Folien zu verschiedenen Themen im Bereich Netzwerktechnik
 
 <div @click="$slidev.nav.next" class="mt-12 py-1" hover:bg="white op-10">
-  Press Space for next page <carbon:arrow-right />
+  Weiter <carbon:arrow-right />
 </div>
 
-<div class="abs-br m-6 text-xl">
-  <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="slidev-icon-btn">
-    <carbon:edit />
-  </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" class="slidev-icon-btn">
-    <carbon:logo-github />
-  </a>
+<div class="abs-br m-6 text-sm">
+  © Oliver Lux
 </div>
-
-<!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
--->
-
----
-transition: fade-out
----
-
-# What is Slidev?
-
-Slidev is a slides maker and presenter designed for developers, consist of the following features
-
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - themes can be shared and re-used as npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embed Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export to PDF, PPTX, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - virtually anything that's possible on a webpage is possible in Slidev
-<br>
-<br>
-
-Read more about [Why Slidev?](https://sli.dev/guide/why)
-
-<!--
-You can have `style` tag in markdown to override the style for the current page.
-Learn more: https://sli.dev/features/slide-scope-style
--->
 
 <style>
 h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-color: #ffffffff;
+  background-image: linear-gradient(45deg, #ffffffff, #fcfcfcff);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -82,556 +47,985 @@ h1 {
 }
 </style>
 
-<!--
-Here is another comment.
--->
-
 ---
-transition: slide-up
-level: 2
+transition: fade-out
 ---
 
-# Navigation
 
-Hover on the bottom-left corner to see the navigation's controls panel, [learn more](https://sli.dev/guide/ui#navigation-bar)
+# Definition Netzwerk
 
-## Keyboard Shortcuts
+> Ein Netzwerk stellt eine Infrastruktur dar, die Datenendgeräten die wahlfreie Kommunikation untereinander, den Datenaustausch und die Nutzung gemeinsamer Ressourcen und Dienste transparent ermöglicht.
 
-|                                                     |                             |
-| --------------------------------------------------- | --------------------------- |
-| <kbd>right</kbd> / <kbd>space</kbd>                 | next animation or slide     |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd>                                       | previous slide              |
-| <kbd>down</kbd>                                     | next slide                  |
+<br><br>
 
-<!-- https://sli.dev/guide/animations.html#click-animation -->
-<img
-  v-click
-  class="absolute -bottom-9 -left-7 w-80 opacity-50"
-  src="https://sli.dev/assets/arrow-bottom-left.svg"
-  alt=""
-/>
-<p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
+
+# Netzwerkprotokolle
+
+- Festlegen der Modalitäten für den Aufbau und das Trennen von Verbindungen
+- Regeln zum Austausch der Daten und das Fehrhalten im Fehlerfall
+<br><br>
+
+> Netzwerkprotokolle stellen die Schicht zwischen der Hardware und der jeweiligen Anwendung, resp. dem Anwender dar, der mit ihnen kommuniziert.
 
 ---
-layout: two-cols
-layoutClass: gap-16
+transition: fade-out
 ---
 
-# Table of contents
+# TCP/IP (Transmission Control Protocol/Internet Protocol)
 
-You can use the `Toc` component to generate a table of contents for your slides:
-
-```html
-<Toc minDepth="1" maxDepth="1" />
-```
-
-The title will be inferred from your slide content, or you can override it with `title` and `level` in your frontmatter.
-
-::right::
-
-<Toc text-sm minDepth="1" maxDepth="2" />
+- In den 60er Jahren erfunden
+- Grundzüge von heute sind 1974 geschaffen worden (RFC 675)
+- Grundlagenprotokolle der heutigen Netzwerkkommunikation
 
 ---
-layout: image-right
-image: https://cover.sli.dev
+transition: fade-out
 ---
 
-# Code
+# Merkmale TCP/IP
 
-Use code snippets and get the highlighting directly, and even types hover!
+- Architekturunabhängige Netzwerktechnologie
+- Verbindungen von und zu allen Netzwerkteilnehmenden
+- Anwendungsprotokolle nach allgemeinen Standards
+- Vermittlungseben mit verbindungslosem Protokoll
+- Paketvermittlungsrechner als Netzknoten
+- Sicherungsfunktionen in Transportprotokollen
 
-```ts [filename-example.ts] {all|4|6|6-7|9|all} twoslash
-// TwoSlash enables TypeScript hover information
-// and errors in markdown code blocks
-// More at https://shiki.style/packages/twoslash
-import { computed, ref } from 'vue'
+---
+transition: fade-out
+---
 
-const count = ref(0)
-const doubled = computed(() => count.value * 2)
+# OSI-Schichtenmodell
+![OSI-Modell](https://res.cloudinary.com/luggs/image/upload/v1648542358/Informatik/Modul%20117/osi.png)
 
-doubled.value = 2
-```
+---
+transition: fade-out
+---
 
-<arrow v-click="[4, 5]" x1="350" y1="310" x2="195" y2="342" color="#953" width="2" arrowSize="1" />
+# Netzwerktopologien 
 
-<!-- This allow you to embed external code blocks -->
-<<< @/snippets/external.ts#snippet
+- Sterntopologie
+- Baumtopologie
+- Ringtopologie
+- Bustopologie
+- Vermaschte Topologie
 
-<!-- Footer -->
+Weitere Informationen: 
+🌎 https://www.elektronik-kompendium.de/sites/net/0503281.htm
 
-[Learn more](https://sli.dev/features/line-highlighting)
+---
+transition: fade-out
+---
 
-<!-- Inline style -->
+# Reichweite von Netzwerken 
+
 <style>
-.footnotes-sep {
-  @apply mt-5 opacity-10;
-}
-.footnotes {
-  @apply text-sm opacity-75;
-}
-.footnote-backref {
-  display: none;
+    table {
+        font-size:85%;
+    }
+</style>
+
+| Name | Beschreibung |
+|------|-------------|
+| PAN | Personal Area Network, Reichweite ca. 5-10 Meter |
+| LAN | Local Area Network, Reichweite typischerweise in einem Gebäude| 
+| CAN | Campus Area Network, Reichweite über einen Firmenkomplex / Universität |
+| MAN | Metropolian Area Network, Reichweite über ein Stadtgebiet |
+| WAN | Wide Area Network, Reichweite über grössere geografische Distanz, mehrere LANs zusammen |
+| GAN | Global Area Network, weltweite Verbindung von mehreren WANs |
+
+---
+transition: fade-out
+---
+
+# Netzwerkplan
+
+![Netzwerkplan](https://res.cloudinary.com/luggs/image/upload/w_500/v1648196997/Informatik/Modul%20117/netzwerkplan.png)
+
+---
+transition: fade-out
+---
+
+# Netzwerkplan - Wichtiges
+
+- Korrekte Verbindungen
+- Übersichtlichkeit
+- Beschriftung der Geräte
+- Titel, Autor, Version, etc.
+
+
+---
+transition: fade-out
+layout: cover
+---
+
+# Netzwerkgeräte
+
+<style>
+h1 {
+  background-color: #ffffffff;
+  background-image: linear-gradient(45deg, #ffffffff, #fcfcfcff);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 </style>
 
-<!--
-Notes can also sync with clicks
-
-[click] This will be highlighted after the first click
-
-[click] Highlighted with `count = ref(0)`
-
-[click:3] Last click (skip two clicks)
--->
-
 ---
-level: 2
+transition: fade-out
 ---
 
-# Shiki Magic Move
+# Hubs
 
-Powered by [shiki-magic-move](https://shiki-magic-move.netlify.app/), Slidev supports animations across multiple code snippets.
+- Leiten sämtliche Datenpakete an alle Ausgänge
+- Arbeiten auf OSI-Layer 1
+- Sind veraltet und sollten ersetzt werden
 
-Add multiple code blocks and wrap them with <code>````md magic-move</code> (four backticks) to enable the magic move. For example:
+![Hub](https://res.cloudinary.com/luggs/image/upload/v1648643143/Informatik/Modul%20117/hub.gif)
 
-````md magic-move {lines: true}
-```ts {*|2|*}
-// step 1
-const author = reactive({
-  name: 'John Doe',
-  books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-})
-```
+---
+transition: fade-out
+---
 
-```ts {*|1-2|3-4|3-4,8}
-// step 2
-export default {
-  data() {
-    return {
-      author: {
-        name: 'John Doe',
-        books: [
-          'Vue 2 - Advanced Guide',
-          'Vue 3 - Basic Guide',
-          'Vue 4 - The Mystery'
-        ]
-      }
-    }
-  }
+# Switches
+
+- Einfache Switches ➡ OSI-Layer 2
+- Programmierbare Switches ➡ OSI-Layer 3
+- Switches merken sich die MAC-Adressen
+
+![Switch](https://res.cloudinary.com/luggs/image/upload/v1648643270/Informatik/Modul%20117/switch.gif)
+
+---
+transition: fade-out
+---
+
+# Switch - Schleifen
+
+- Einfache Switches können mit einem Loop (oder Mehrfachverkabelung) und einem entsprechenden Broadcast-Paket ausser Gefecht gesetzt werden
+- Abhilfe schafft STP (Spanning Tree Protocol)
+
+
+---
+transition: fade-out
+---
+
+# Virtuelle Netze (VLAN)
+
+Programmierbare Swiches können 
+- grosse Netzwerke unterteilen.
+- betriebliche Organisationen mittels VLANs abbilden.
+- das Netz nach Anwendungen einteilen (VoIP, Multimedia-Dienste, etc.).
+
+---
+transition: fade-out
+---
+
+
+# Angriffspunkte Switches
+
+- Missbrauch STP
+- Überlauf: Interne MAC-Tabelle wird sinnlos gefüllt, Switch wird zu einem Hub degradiert und Angreifer kann Netzwerkverkehr an einem Port mithören
+- Gefälschte Frames
+
+---
+transition: fade-out
+---
+
+# Router
+
+- Vermittelt Pakete an andere Netzwerke
+- OSI-Layer 3
+![Router](https://res.cloudinary.com/luggs/image/upload/v1648643939/Informatik/Modul%20117/router.png)
+
+
+---
+transition: fade-out
+layout: cover
+---
+
+# Router
+
+<style>
+h1 {
+  background-color: #ffffffff;
+  background-image: linear-gradient(45deg, #ffffffff, #fcfcfcff);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
-```
+</style>
 
-```ts
-// step 3
-export default {
-  data: () => ({
-    author: {
-      name: 'John Doe',
-      books: [
-        'Vue 2 - Advanced Guide',
-        'Vue 3 - Basic Guide',
-        'Vue 4 - The Mystery'
-      ]
-    }
-  })
+---
+transition: fade-out
+---
+
+# Aufgaben eines Routers
+
+- Umpacken (Umladen) von Datenpaketen
+- Ermitteln der verfügbaren Routen
+- Auswahl der geeignetsten Route
+- Pakete entsprechend weiterleiten
+![Routing](https://res.cloudinary.com/luggs/image/upload/v1701420103/w_400/Informatik/Modul%20117/routing.png)
+
+
+---
+transition: fade-out
+---
+
+
+# Statisches Routing
+
+Die Routen werden mit Hilfe der Routingtabelle statisch konfiguriert
+- **Netzadresse**: Eintrag des Ziel-Netzes das erreicht werden soll
+- **Next Hop**: IP-Adresse des nächsten Routers zum Ziel-Netz
+- **Metric**: Ein Mass für die Güte eines Weges, häufig Hop Count
+- **Interface**: Schnittstelle über die das Paket weitergeleitet wird
+
+---
+transition: fade-out
+---
+
+# Routing Tabelle
+
+Destination Network | Next Hop | Metric (z.B. Hop Count) | Interface
+-- | -------- | -------- |-------- |
+192.168.1.0/24   | -   | 0 | e0 |
+192.168.88.0/24   | -   | 0 | s0 |
+192.168.2.0/24   | 192.168.88.2 | 1 | s0 |
+
+![Routingbeispiel](https://res.cloudinary.com/luggs/image/upload/c_scale,w_709/v1701422804/Informatik/Modul%20117/routingtabelle.png)
+
+---
+transition: fade-out
+---
+
+# Routing Tabelle
+
+`route print`
+
+![Routingtabelle](https://res.cloudinary.com/luggs/image/upload/c_scale,w_701/v1701423163/Informatik/Modul%20117/routingtabelle_cmd.png)
+
+---
+transition: fade-out
+---
+
+# Default Route (Roter Router)
+
+Destination Network | Next Hop | Metric  | Interface
+-- | -------- | -------- |-------- |
+192.168.1.0/24   | -   | 0 | e0 |
+192.168.88.0/24   | -   | 0 | s0 |
+0.0.0.0/0   | 192.168.88.2 | - | s0 |
+
+![Default Route](https://res.cloudinary.com/luggs/image/upload/c_scale,w_548/v1701423452/Informatik/Modul%20117/default_route.png)
+
+---
+transition: fade-out
+---
+
+# Default Route (Blauer Router)
+
+Destination Network | Next Hop | Metric  | Interface
+-- | -------- | -------- |-------- |
+192.168.2.0/24   | -   | 0 | e0 |
+192.168.88.0/24   | -   | 0 | s0 |
+102.85.0.0/16   | -   | 0 | s1 |
+192.168.1.0/24   | 192.168.88.1   | 1 | s0 |
+0.0.0.0/0   | 102.85.1.1 | - | s1 |
+
+Grafik auf nächster Folie
+
+---
+transition: fade-out
+---
+
+![Default Route](https://res.cloudinary.com/luggs/image/upload/c_scale,w_850/v1701424687/Informatik/Modul%20117/default_route_blau.png)
+
+---
+transition: fade-out
+---
+
+# Vorgehen
+
+![Vorgehen Routing](https://res.cloudinary.com/luggs/image/upload/w_800/v1701424862/Informatik/Modul%20117/vorgehen_routing.png)
+
+---
+transition: fade-out
+---
+
+# Vorgehen
+
+![Vorgehen Routing](https://res.cloudinary.com/luggs/image/upload/w_800/v1701425006/Informatik/Modul%20117/vorgehen_routing2.png)
+
+---
+transition: fade-out
+---
+
+# Routing Kommandos Windows
+
+Aufgabe | Windows | 
+-- | -------- | 
+Routingtabelle anzeigen   | `route print`   |
+Statische Route eintragen   | `route add 157.3.0.0 mask 255.255.0.0 202.55.80.1 [metric 1]` |  
+Default Route eintragen   | `route add 0.0.0.0 mask 0.0.0.0 161.99.1.1 [metric 1]` |  
+Statische Route löschen | `route del ...` |
+
+---
+transition: fade-out
+---
+
+# Routing Kommandos Linux
+
+Aufgabe | Linux | 
+-- | -------- | 
+Routingtabelle anzeigen   | `route -n`   |
+Statische Route eintragen   | `route add 157.3.0.0 mask 255.255.0.0 gw 202.55.80.1 [dev eth0][metric 1]` |  
+Default Route eintragen   | `route add default gw 161.99.1.1 [metric 1]` |  
+Statische Route löschen | `route del ...` |
+
+---
+transition: fade-out
+---
+
+# Routing Kommandos Cisco
+
+Aufgabe | Cisco | 
+-- | -------- | 
+Routingtabelle anzeigen   | `show ip route`   |
+Statische Route eintragen   | `ip route 157.3.0.0 mask 255.255.0.0 202.55.80.1` |  
+Default Route eintragen   | `ip route 0.0.0.0 0.0.0.0 161.99.1.1` |  
+Statische Route löschen | `no ip route ...` |
+
+
+---
+transition: fade-out
+---
+
+# Routing Arten
+
+- **Statisches Routing:** Die Routingtabelle wird manuell bearbeitet. Feste Vorgaben für den Router, dieser kann damit nicht auf Netzwerkprobleme reagieren.
+- **Dynamisches Routing:** Die Routingtabelle wird von den Routern selbstständig aufgebaut. Über Routingprotokolle werden
+Erreichbarkeitsdaten zwischen den Routern ausgetauscht.
+
+---
+transition: fade-out
+---
+
+# Routing Protokolle
+
+- Interior Gateway Protocol (IGP) für grosse Unternehmensnetzwerke: 
+    - OSPF (Open Shortest Path First)
+    - RIP (Routing Information Protocol)
+    - IS-IS (Intermediate System to Intermediate System)
+- Exterior Gateway Protocol (EGP) für Router im Internet:
+    - BGP (Border Gateway Protokoll)
+
+---
+transition: fade-out
+---
+
+# RIP
+
+- Beim Start kennt der Router nur seine direkt angeschlossenen
+Netzwerke, diese müssen unter RIP eingetragen werden
+- Er sendet an alle seine Nachbarn eine Bitte um die Zusendung ihrer vollständigen Routingtabelle
+- Mit den Antworten füllt der Router seine eigene Routingtabelle
+
+---
+transition: fade-out
+---
+
+# RIP
+
+![RIP](https://res.cloudinary.com/luggs/image/upload/w_900/v1701425909/Informatik/Modul%20117/rip.png)
+
+---
+transition: fade-out
+layout: cover
+---
+
+# Kabeltypen
+
+<style>
+h1 {
+  background-color: #ffffffff;
+  background-image: linear-gradient(45deg, #ffffffff, #fcfcfcff);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
-```
+</style>
 
-Non-code blocks are ignored.
+---
+transition: fade-out
+---
 
-```vue
-<!-- step 4 -->
-<script setup>
-const author = {
-  name: 'John Doe',
-  books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
+# Twisted-Pair-Kabel
+
+- RJ45-Stecker
+- Maximale Länge von 100 Metern
+
+![RJ45](https://res.cloudinary.com/luggs/image/upload/w_500/v1648544118/Informatik/Modul%20117/rj45.webp)
+
+---
+transition: fade-out
+---
+
+<style scoped>
+    table {
+    font-size: 0.8em;
 }
-</script>
-```
-````
+</style>
+# Kabelkategorien 1/3
+
+| Bezeichnung | Weitere Namen | Norm | Kabel | Hinweise |
+|---|---|---|---|---|
+| 10Base-T | Ethernet | IEEE 802.3j | Cat. 3-7 | Hubs oder Switches als Netzknoten |
+| 100Base-TX | Fast Ethernet | IEEE 802.3, Clause 25 | Cat. 5-7 | Switches als Netzknoten |
+| 100Base-T | Gigabit Ethernet | IEEE 802.3, Clause 40 | Cat. 5-7 | Switches als Netzknoten, Benutzung aller vier Doppeladern zur Unterdrückung von Signalechos  |
 
 ---
-
-# Components
-
-<div grid="~ cols-2 gap-4">
-<div>
-
-You can use Vue components directly inside your slides.
-
-We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that you can use directly. And adding your custom components is also super easy.
-
-```html
-<Counter :count="10" />
-```
-
-<!-- ./components/Counter.vue -->
-<Counter :count="10" m="t-4" />
-
-Check out [the guides](https://sli.dev/builtin/components.html) for more.
-
-</div>
-<div>
-
-```html
-<Tweet id="1390115482657726468" />
-```
-
-<Tweet id="1390115482657726468" scale="0.65" />
-
-</div>
-</div>
-
-<!--
-Presenter note with **bold**, *italic*, and ~~striked~~ text.
-
-Also, HTML elements are valid:
-<div class="flex w-full">
-  <span style="flex-grow: 1;">Left content</span>
-  <span>Right content</span>
-</div>
--->
-
----
-class: px-20
+transition: fade-out
 ---
 
-# Themes
-
-Slidev comes with powerful theming support. Themes can provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
-
-<div grid="~ cols-2 gap-2" m="t-2">
-
-```yaml
----
-theme: default
----
-```
-
-```yaml
----
-theme: seriph
----
-```
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-default/01.png?raw=true" alt="">
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true" alt="">
-
-</div>
-
-Read more about [How to use a theme](https://sli.dev/guide/theme-addon#use-theme) and
-check out the [Awesome Themes Gallery](https://sli.dev/resources/theme-gallery).
-
----
-
-# Clicks Animations
-
-You can add `v-click` to elements to add a click animation.
-
-<div v-click>
-
-This shows up when you click the slide:
-
-```html
-<div v-click>This shows up when you click the slide.</div>
-```
-
-</div>
-
-<br>
-
-<v-click>
-
-The <span v-mark.red="3"><code>v-mark</code> directive</span>
-also allows you to add
-<span v-mark.circle.orange="4">inline marks</span>
-, powered by [Rough Notation](https://roughnotation.com/):
-
-```html
-<span v-mark.underline.orange>inline markers</span>
-```
-
-</v-click>
-
-<div mt-20 v-click>
-
-[Learn more](https://sli.dev/guide/animations#click-animation)
-
-</div>
-
----
-
-# Motions
-
-Motion animations are powered by [@vueuse/motion](https://motion.vueuse.org/), triggered by `v-motion` directive.
-
-```html
-<div
-  v-motion
-  :initial="{ x: -80 }"
-  :enter="{ x: 0 }"
-  :click-3="{ x: 80 }"
-  :leave="{ x: 1000 }"
->
-  Slidev
-</div>
-```
-
-<div class="w-60 relative">
-  <div class="relative w-40 h-40">
-    <img
-      v-motion
-      :initial="{ x: 800, y: -100, scale: 1.5, rotate: -50 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-square.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ y: 500, x: -100, scale: 2 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-circle.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ x: 600, y: 400, scale: 2, rotate: 100 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-triangle.png"
-      alt=""
-    />
-  </div>
-
-  <div
-    class="text-5xl absolute top-14 left-40 text-[#2B90B6] -z-1"
-    v-motion
-    :initial="{ x: -80, opacity: 0}"
-    :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
-    Slidev
-  </div>
-</div>
-
-<!-- vue script setup scripts can be directly used in markdown, and will only affects current page -->
-<script setup lang="ts">
-const final = {
-  x: 0,
-  y: 0,
-  rotate: 0,
-  scale: 1,
-  transition: {
-    type: 'spring',
-    damping: 10,
-    stiffness: 20,
-    mass: 2
-  }
+<style scoped>
+    table {
+    font-size: 0.8em;
 }
-</script>
+</style>
+# Kabelkategorien 2/3
 
-<div
-  v-motion
-  :initial="{ x:35, y: 30, opacity: 0}"
-  :enter="{ y: 0, opacity: 1, transition: { delay: 3500 } }">
-
-[Learn more](https://sli.dev/guide/animations.html#motion)
-
-</div>
+| Bezeichnung | Weitere Namen | Norm | Kabel | Hinweise |
+|---|---|---|---|---|
+| 10GBase-T | 10 Gigabit Ethernet | IEEE 802.3an | Cat. 7 | Switches als Netzknoten, Benutzung aller vier Doppeladern zur Unterdrückung von Signalechos |
+| 40GBase-T | 40 Gigabit Ethernet | IEEE 802.3bq | Cat. 8.1 | Switches als Netzknoten, für kurze Verbindungen zentraler EDV-Komponenten, RJ45-Stecker |
 
 ---
-
-# $\LaTeX$
-
-$\LaTeX$ is supported out-of-box. Powered by [$\KaTeX$](https://katex.org/).
-
-<div h-3 />
-
-Inline $\sqrt{3x-1}+(1+x)^2$
-
-Block
-$$ {1|3|all}
-\begin{aligned}
-\nabla \cdot \vec{E} &= \frac{\rho}{\varepsilon_0} \\
-\nabla \cdot \vec{B} &= 0 \\
-\nabla \times \vec{E} &= -\frac{\partial\vec{B}}{\partial t} \\
-\nabla \times \vec{B} &= \mu_0\vec{J} + \mu_0\varepsilon_0\frac{\partial\vec{E}}{\partial t}
-\end{aligned}
-$$
-
-[Learn more](https://sli.dev/features/latex)
-
+transition: fade-out
 ---
 
-# Diagrams
-
-You can create diagrams / graphs from textual descriptions, directly in your Markdown.
-
-<div class="grid grid-cols-4 gap-5 pt-4 -mb-6">
-
-```mermaid {scale: 0.5, alt: 'A simple sequence diagram'}
-sequenceDiagram
-    Alice->John: Hello John, how are you?
-    Note over Alice,John: A typical interaction
-```
-
-```mermaid {theme: 'neutral', scale: 0.8}
-graph TD
-B[Text] --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
-```
-
-```mermaid
-mindmap
-  root((mindmap))
-    Origins
-      Long history
-      ::icon(fa fa-book)
-      Popularisation
-        British popular psychology author Tony Buzan
-    Research
-      On effectiveness<br/>and features
-      On Automatic creation
-        Uses
-            Creative techniques
-            Strategic planning
-            Argument mapping
-    Tools
-      Pen and paper
-      Mermaid
-```
-
-```plantuml {scale: 0.7}
-@startuml
-
-package "Some Group" {
-  HTTP - [First Component]
-  [Another Component]
+<style scoped>
+    table {
+    font-size: 0.8em;
 }
+</style>
+# Kabelkategorien 3/3
 
-node "Other Groups" {
-  FTP - [Second Component]
-  [First Component] --> FTP
+| Bezeichnung | Weitere Namen | Norm | Kabel | Hinweise |
+|---|---|---|---|---|
+| 100GBase-T | 100 Gigabit Ethernet | IEEE 802.3bg | Cat. 8.2 | Switches als Netzknoten, für kurze Verbindungen zentraler EDV-Komponenten, ARJ45- bzw. GG45-Stecker  |
+
+---
+transition: fade-out
+---
+
+# Kabeltypen
+
+`U` ungeschirmt
+`F` Folienschirm
+`S` Geflechtschirm
+`SF`    Geflecht- und Folienschirm (nur bei Gesamtschirmung)
+`TP`    Twisted Pair (verdrillte Adern)
+`QP`    Quad Pair
+
+![Kabeltypen](https://res.cloudinary.com/luggs/image/upload/h_200/v1648545187/Informatik/Modul%20117/kabeltypen.png)
+
+---
+transition: fade-out
+---
+
+# PoE (Power over Ethernet)
+
+- Netzwerkfähige Geräte können über Strom versorgt werden
+- Stromversorgungskabel kann eingespart werden
+
+---
+transition: fade-out
+---
+
+# Tipps
+
+- Netzwerkkabel und -stecker können auch defekt sein
+- Defekte Kabel **sofort** entsorgen
+    - Stecker abschneiden, damit sofort ersichtlich ist, dass Netzwerkkabel defekt ist
+
+---
+transition: fade-out
+---
+
+# Lichtwellenleiter
+
+- LWL ermöglichen schnellste Kommunikation
+- Hohe Abhörsicherheit und geringer Platzbedarf
+- Unempfindlichkeit gegenüber elektrischen Einflüssen
+- Sehr aufwändige Montage
+- Heikel im Umgang (Knicken), hohe Anschaffungspreise
+
+---
+transition: fade-out
+---
+
+# Unterschiedliche Arten LWL
+
+![LWL](https://res.cloudinary.com/luggs/image/upload/v1648549247/Informatik/Modul%20117/lwl.png)
+
+---
+transition: fade-out
+layout: cover
+---
+
+# IP-Adressen
+
+<style>
+h1 {
+  background-color: #ffffffff;
+  background-image: linear-gradient(45deg, #ffffffff, #fcfcfcff);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
+</style>
 
-cloud {
-  [Example 1]
+---
+transition: fade-out
+---
+
+# IP-Adresse setzen
+
+## Windows
+`Systemeinstellungen` - `Netzwerk und Freigabecenter` - `Eigenschaften der LAN-Verbindung` - `Adapteroptionen`
+
+## Linux
+```
+auto eth0
+iface eth0 inet static
+address 192.168.0.34
+netmask 255.255.255.0
+gateway 192.168.0.1
+```
+
+---
+transition: fade-out
+---
+
+# Zeroconf
+
+- Microsoft Windows ➡ APIPA (Automatic Private IP Adressing)
+- Apple ➡ bonjour
+- Linux ➡ avahi
+<br><br>
+> Zeroconf nur im Notfall verwenden. Meist ein Zeichen, dass etwas falsch konfiguriert ist.
+
+---
+transition: fade-out
+---
+
+# Physikalische Adresse (MAC)
+
+- MAC (Media Access Control), eindeutig weltweite Identifizierung am Netzwerk
+- Aufbau MAC-Adresse
+    - `LL:LL:LL:XX:XX:XX` 
+    - `LL`: Herstellercode
+    - `XX`: Identifikationsteil
+- Broadcast: `ff:ff:ff:ff:ff:ff`
+- MAC-Adresse wird an OS weitergegeben, da besteht die Möglichkeit zur Veränderung
+
+---
+transition: fade-out
+---
+
+# Ethernet-Pakete (Frames)
+
+- Daten werden mit Ethernet-Paketen transportiert
+- Zerlegung der Daten in Einzelpakete, welche vom Sender zum Empfänger gesendet werden
+![Aufbau Ethernet-Frame](https://res.cloudinary.com/luggs/image/upload/v1648625565/Informatik/Modul%20117/ethernet-frame.png)
+
+- Typ: `0x800`: IPv4, `0x86DD`: IPv6
+- Typ: `0x0806`: ARP, `0x0842`: Wake on LAN
+- FCS: Frame Check Sequence
+
+---
+transition: fade-out
+---
+
+# ARP - Adress Resolution Protocol
+
+- Ermittlung der zugehörigen IP-Adresse (v4) zu einer MAC-Adresse
+- ARP fragt alle erreichbaren Teilnehmer, ob er die gesuchte IP besitzt (über `ff:ff:ff:ff:ff:ff`). Der Zielrechner mit der gewünschten IP antwortet mit der entsprechenden MAC-Adresse
+
+```
+Rechner 1 stellt Anfrage:
+00:1e:33:0d:e9:f9 > ff:ff:ff:ff:ff:ff, ARP, length 42: arp who-has 192.168.0.1 tell 192.168.0.103
+
+Rechner 1 erhält als Antwort von Rechner 2:
+00:11:6b:62:93:2e > 00:1e:33:0d:e9:f9, ARP, length 60: arp reply 192.168.0.102 is-at 00:11:6b:62:93:2e
+```
+- ARP-Informationen werden gecached
+
+---
+transition: fade-out
+---
+
+# NDP - Neighbor Discovery Protocol
+
+- Ermittlung der zugehörigen IP-Adresse (v6) zu einer MAC-Adresse
+- Zur Fehlersuche helfen einige Fehlercodes
+
+---
+transition: fade-out
+---
+
+# IP-Adressen
+
+- ab OSI-Schicht 3
+- Analoge: IP-Adresse = Autokennzeichen, MAC-Adresse = Fahrgestellnummer
+- IPv4 Adressen gehen aus, bei IPv6 sind 2^128 IP-Adressen vorhanden
+- Regional Internet Registries: `AfriNIC` (Afrika), `APNIC` (Asien, Pazifik), `RIPE NCC` (Europa), `LACNIC` (Lateinamerika) und `ARIN` (Nordamerika)
+
+---
+transition: fade-out
+---
+
+# IPv4-Adressen
+
+- Aufbau `NNN.NNN.NNN.NNN`
+- Klassen
+    - Klasse A: `0.0.0.0` - `127.255.255.255`
+    - Klasse B: `128.0.0.0` - `191.255.255.255`
+    - Klasse C: `192.0.0.0` - `223.255.255.255`
+- Netz (N)- und Hostanteil (H) (Trennung anhand der Subnetzmaske)
+    - Klasse A: `NNN.HHH.HHH.HHH`
+    - Klasse B: `NNN.NNN.HHH.HHH`
+    - Klasse C: `NNN.NNN.NNN.HHH`
+
+---
+transition: fade-out
+---
+
+# CIDR
+
+- Classless Inter-Domain Routing (CIDR)
+- Subnetzmaske nicht mehr dezimal (bspw. `255.255.255.0`), sondern binär (`11111111.11111111.11111111.00000000`)
+- mehr Möglichkeiten zwischen Netz- und Hostanteil möglich, bspw. `11111111.11111111.11111111.11111000` = `255.255.255.248`
+- Notation `192.168.1.36/29` (29x eine 1)
+- CIDR-Berechnungen: https://www.ionos.de/digitalguide/server/knowhow/classless-inter-domain-routing/
+
+
+---
+transition: fade-out
+---
+
+# Zeroconf
+
+- falls keine korrekte IP durch DHCP vergeben, wird Zeroconf (APIPA) verwendet
+- Adressbereich `169.254.1.0` bis `169.254.254.255` wird vergeben
+- Namensauflösung ohne DNS
+- autom. Konfiguration greift tief ins OS ein. Vom Einsatz wird abgeraten
+
+---
+transition: fade-out
+---
+
+# IPv6-Adressen
+
+- Integrierte Verschlüsselung von IP-Paketen (IPsec)
+- Verwirklichung des Ende-zu-Ende-Prinzip, d.h. Wegfall von NAT (Network Address Translation)
+- Hex. Schreibweise `fe80:0000:0000:0000:0223:54ff:fe5b:869d`
+    - führende Blöcke mit `0` können weggelassen werden
+    - aufeinanderfolgende Blöcke mit `0` dürfen ausgelassen  und mit einem `:` ersetzt werden
+    - Bsp. von oben `fe80::223:54ff:fe5b:869d`
+    - URL: `http://[fe80::223:54ff:fe5b:869d]:8080`
+
+---
+transition: fade-out
+layout: cover
+---
+
+# DNS
+
+<style>
+h1 {
+  background-color: #ffffffff;
+  background-image: linear-gradient(45deg, #ffffffff, #fcfcfcff);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
+</style>
 
-database "MySql" {
-  folder "This is my folder" {
-    [Folder 3]
-  }
-  frame "Foo" {
-    [Frame 4]
-  }
+
+---
+transition: fade-out
+---
+
+# Verwendung von Rechnernamen
+
+- Datei hosts
+- DNS (Domain Name Server)
+
+![DNS Namensraum](https://res.cloudinary.com/luggs/image/upload/v1648640975/Informatik/Modul%20117/dns-namensraum.png)
+
+---
+transition: fade-out
+---
+
+# DNS - Wichtige Begriffe
+
+- **autoritativ**: Der DNS-Server ist für eine Zone zuständig und die von ihm darüber ausgegebenen Informationen gelten als "sicher"
+- **Primary Nameserver**: Der autoritative Server einer Zone
+- **Secondary Nameserver**: zusätzlicher Nameserver für eine Zone mit den gleichen Informationen wie der autoritative Server (mittels Zonentransfer sichergestellt)
+- **Nicht-autoritativ**: DNS-Server bezieht seine Informationen von anderen DNS-Servern
+- **Caching-only-Nameserver**: Reiner Caching-Server
+
+---
+transition: fade-out
+---
+
+# DNS - Aufbau
+
+![](https://res.cloudinary.com/luggs/image/upload/v1648640975/Informatik/Modul%20117/dns-aufbau.png)
+
+---
+transition: fade-out
+---
+
+# DNS - Resolver
+![DNS-Resolver](https://res.cloudinary.com/luggs/image/upload/v1648640975/Informatik/Modul%20117/dns-resolver.png)
+
+---
+transition: fade-out
+---
+
+# Aufbau SOA-Record
+
+```
+$ORIGIN example.org.
+$TTL 1750
+@	IN	SOA	master.example.org admin\.master.example.org (
+	2019040502	; serial
+	86400		; refresh
+	7200		; retry
+	3600000	        ; expire
+	1750		; minimum
+)
+	IN	NS	a.iana-servers.net.
+www	IN	A	93.184.216.34
+```
+---
+transition: fade-out
+---
+
+# Beschreibung SOA-Record
+
+- **Zonenname**: kann durch `@` ersetzt werden, **Zonenklasse**: `IN`
+- **Record-Type**: hier `SOA`
+- **Primary Master**: primärer Nameserver
+- **E-Mail Zonenbetreuer**: Kein @-Zeichen möglich
+- **Seriennummer**: je höher, desto aktueller (normalerweise in der Form `YYYYMMDDlfd` (lfd = laufende Nummer))
+- **Refresh** (Slave kontrolliert ob Änderungen), **Retry** (falls nicht erreichbar), **Expire** (Slave Zone läuft ab) und **TTL** (Vorhaltezeit von Anfragen mit negativer Antwort)
+
+---
+transition: fade-out
+---
+
+# Weitere Record-Typen
+
+- `NS`: Nameserver (Zonendatei)
+- `MX`: Mail-Server (Zonendatei)
+- `A`: IPv4-Host (Zonendatei)
+- `AAAA`: IPv6-Host (Zonendatei)
+- `CNAME`: Verweis auf weiteren Host-Namen (Zonendatei)
+- `PTR`: Zeiger (Revers-Zonendatei)
+
+---
+transition: fade-out
+layout: cover
+---
+
+# Funktechnik
+
+<style>
+h1 {
+  background-color: #ffffffff;
+  background-image: linear-gradient(45deg, #ffffffff, #fcfcfcff);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
-
-[Another Component] --> [Example 1]
-[Example 1] --> [Folder 3]
-[Folder 3] --> [Frame 4]
-
-@enduml
-```
-
-</div>
-
-Learn more: [Mermaid Diagrams](https://sli.dev/features/mermaid) and [PlantUML Diagrams](https://sli.dev/features/plantuml)
+</style>
 
 ---
-foo: bar
-dragPos:
-  square: 691,32,167,_,-16
+transition: fade-out
 ---
 
-# Draggable Elements
+# WLAN (Wireless LAN, Wi-Fi)
 
-Double-click on the draggable elements to edit their positions.
-
-<br>
-
-###### Directive Usage
-
-```md
-<img v-drag="'square'" src="https://sli.dev/logo.png">
-```
-
-<br>
-
-###### Component Usage
-
-```md
-<v-drag text-3xl>
-  <div class="i-carbon:arrow-up" />
-  Use the `v-drag` component to have a draggable container!
-</v-drag>
-```
-
-<v-drag pos="663,206,261,_,-15">
-  <div text-center text-3xl border border-main rounded>
-    Double-click me!
-  </div>
-</v-drag>
-
-<img v-drag="'square'" src="https://sli.dev/logo.png">
-
-###### Draggable Arrow
-
-```md
-<v-drag-arrow two-way />
-```
-
-<v-drag-arrow pos="67,452,253,46" two-way op70 />
+- WLAN
+    - Normen wie IEEE 802.11a, 802.11ac, etc. https://de.wikipedia.org/wiki/IEEE_802.11
+- GSM, UMTS etc.
+    - GPRS, EDGE, UMTS, LTE, 5G, etc.
 
 ---
-src: ./pages/imported-slides.md
-hide: false
+transition: fade-out
 ---
 
----
+# WLAN - Betriebsarten
 
-# Monaco Editor
-
-Slidev provides built-in Monaco Editor support.
-
-Add `{monaco}` to the code block to turn it into an editor:
-
-```ts {monaco}
-import { ref } from 'vue'
-import { emptyArray } from './external'
-
-const arr = ref(emptyArray(10))
-```
-
-Use `{monaco-run}` to create an editor that can execute the code directly in the slide:
-
-```ts {monaco-run}
-import { version } from 'vue'
-import { emptyArray, sayHello } from './external'
-
-sayHello()
-console.log(`vue ${version}`)
-console.log(emptyArray<number>(10).reduce(fib => [...fib, fib.at(-1)! + fib.at(-2)!], [1, 1]))
-```
+- Infrastrukturmodus
+    Der Infrastruktur-Modus ähnelt im Aufbau dem Mobilfunknetz: Ein Wireless Access Point, oft in Form eines Routers, übernimmt die Koordination aller Clients und sendet in einstellbaren Intervallen (üblicherweise zehnmal pro Sekunde) kleine Datenpakete (füs SSID).
+- Ad-hoc-Modus
+    Kommunikation der Teilnehmenden untereinander, im Ad-hoc-Modus ist keine Station besonders ausgezeichnet, sondern alle sind gleichwertig.
 
 ---
-layout: center
-class: text-center
+transition: fade-out
 ---
 
-# Learn More
+# WLAN - Frequenzen und Kanäle
 
-[Documentation](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/resources/showcases)
+- 2.4 GHz
+    Der Frequenzbereich im 2,4-GHz-Band wurde in 14 Kanäle aufgeteilt, es ist darauf zu achten, dass sich Frequenzbänder nicht überlappen (EU: 1, 5, 9, 13)
+- 5 GHz
 
-<PoweredBySlidev mt-10 />
+---
+transition: fade-out
+---
+
+# WLAN - Sicherheit
+
+- Offene Netze
+- WEP
+- WPA/WPA2
+- WPA3 (aktuell)
+
+
+---
+transition: fade-out
+layout: cover
+---
+
+# Protokolle
+
+<style>
+h1 {
+  background-color: #ffffffff;
+  background-image: linear-gradient(45deg, #ffffffff, #fcfcfcff);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+---
+transition: fade-out
+---
+
+# Einleitung
+
+- Verschlüsselte Fernsitzungen
+- Verschlüsselte Datenübertragung
+- SSH Tunnel
+
+---
+transition: fade-out
+---
+
+# SSH - Authentifizierung
+
+- Anmeldung per Kennwort
+- Anmeldung per Public-Key-Authentifizierung (zu bevorzugen)
+    **Damit sind auch Scripte ohne Benutzereingriff möglich**
+
+---
+transition: fade-out
+---
+
+# SSH - Schlüssel erzeugen
+
+1. Public und Private Key erzeugen mit `ssh-keygen`
+1. Public Key auf das Zielsystem übertragen und umbenennen auf bswp. `id_rsa.pub-<Rechnername>`
+1. Schlüssel nach `.ssh` verschieben
+1. Prüfen, ob `authorized_keys` bereits besteht. Falls nicht, Schlüssel kopieren und unter dem Namen speichern. Ansonsten `cat id_rsa.pub-<Rechnername> >> authorized.keys`
+1. Verbindung testen
+
+---
+transition: fade-out
+---
+
+# Anmeldung SSH
+
+`ssh <Benutzer>@<Rechnername>`
+
+
+---
+transition: fade-out
+---
+
+# Aufbau SSH-Tunnel
+
+`ssh -L<Port-Local>:<Rechner>:<Port> <Rechner>`
+
+`ssh -L8080:netzbuch:80 netzbuch -p7167`
+
+
+---
+transition: fade-out
+---
+
+# TLS-Zertifikat
+
+- Das SSL-Zertifikat dient zur Verschlüsselung und Authentisierung des ganzen Datentransfers zwischen dem Computer des Seitenbesuchers und dem Server.
+- Es wird von der Zertifizierungsstelle ausgestellt, welche für die Webbrowser vertrauenswürdig oder nicht vertrauenswürdig sein kann. 
+- Die nicht vertrauenswürdigen Zertifikate können Sie kostenlos auch selbst ausstellen (das sog. self-signed Zertifikat), jedoch wird der Zugriff der Besucher auf ihre Webseiten verschlechtert.
+
+---
+transition: fade-out
+---
+
+# TLS Handshake
+- Bei TLS-Handshakes handelt es sich um eine Reihe von Datagrammen oder Nachrichten, die von einem Client und einem Server ausgetauscht werden. 
+- Ein TLS-Handshake umfasst mehrere Etappen, da Client und Server Informationen austauschen müssen, um den Handshake abzuschliessen und weitere Kommunikation ermöglichen zu können.
+
+---
+transition: fade-out
+---
+
+# Nicht vertrauenswürdiges TLS-Zertifikat
+
+![Zertifikat](https://res.cloudinary.com/luggs/image/upload/w_600/v1670399419/Informatik/Modul%20117/selfsigned_certificate.png)
+
+---
+transition: fade-out
+---
+
+# Vertrauenswürdige TLS-Zertifikate
+
+- Das vertrauenswürdige Zertifikat wird immer von einer bekannten Zertifizierungsstelle ausgestellt, dem Ihr System vertrauen kann. 
+- In der Praxis bedeutet das, dass dieses Zertifikat mit allen heute verwendeten Browsern kompatibel ist. 
+- In IE und Chrome ist das Zertifikat vertrauenswürdig dank der SSL-Zertifikate in Windows. Firefox hat seine eigenen vertrauenswürdigen Zertifikate.
+
+---
+transition: fade-out
+---
+
+# Zertifizierungsstellen
+
+- Symantec
+- Thawte
+- RapidSSL
+- GeoTrust
+- Etc.
+
+
