@@ -7,8 +7,9 @@ background: https://res.cloudinary.com/luggs/image/upload/v1622877578/GBS/gbs.jp
 # some information about your slides (markdown enabled)
 title: Präsentation Oliver Lux
 info: |
-  ## Über mich
+  Über mich
 
+author: Oliver Lux
 # apply UnoCSS classes to the current slide
 class: text-center
 # https://sli.dev/features/drawing

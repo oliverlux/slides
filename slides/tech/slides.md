@@ -7,8 +7,8 @@ background: https://res.cloudinary.com/luggs/image/upload/v1622877578/GBS/gbs.jp
 # some information about your slides (markdown enabled)
 title: Präsentationen
 info: |
-  ## Allgemeines
-  
+  Verschiedene Themen
+
 # apply UnoCSS classes to the current slide
 class: text-center
 # https://sli.dev/features/drawing

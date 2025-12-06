@@ -7,8 +7,9 @@ background: https://res.cloudinary.com/luggs/image/upload/v1765022012/Informatik
 # some information about your slides (markdown enabled)
 title: Netzwerktechnik
 info: |
-  ## Netzwerktechnik
   Folien zu Netzwerktechnik
+
+author: Oliver Lux
 # apply UnoCSS classes to the current slide
 class: text-center
 # https://sli.dev/features/drawing
