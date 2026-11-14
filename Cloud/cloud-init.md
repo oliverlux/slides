@@ -77,7 +77,7 @@ a {
 
 ---
 
-## Warum Cloud-Init?
+# Warum Cloud-Init?
 
 | Ohne Cloud-Init | Mit Cloud-Init |
 |---|---|
@@ -100,7 +100,7 @@ a {
 
 ---
 
-## Das `#cloud-config`-Format
+# Das `#cloud-config`-Format
 
 - User-Data im **YAML**-Format
 - Die **erste Zeile** muss exakt `#cloud-config` lauten
@@ -116,7 +116,7 @@ package_update: true
 
 ---
 
-## Wichtige Module
+# Wichtige Module
 
 | Modul | Zweck |
 |---|---|
@@ -130,7 +130,7 @@ package_update: true
 
 ---
 
-## Beispiel: Benutzer anlegen
+# Beispiel: Benutzer anlegen
 
 ```yaml
 #cloud-config
@@ -148,7 +148,7 @@ users:
 
 ---
 
-## Praxisbeispiel: Webserver
+# Praxisbeispiel: Webserver
 
 ```yaml
 #cloud-config
@@ -167,7 +167,7 @@ Nach dem Start: Webserver läuft und liefert die eigene Startseite aus.
 
 ---
 
-## Cloud-Init verwenden
+# Cloud-Init verwenden
 
 **AWS EC2** – User-Data beim Start angeben:
 
