@@ -73,6 +73,21 @@ a {
 
 > Paket für die Initialisierung von Cloud Instanzen [Beschreibung von Canonical]
 
+> Aus einem generischen Image wird automatisch ein konfigurierter Server.
+
+---
+
+## Warum Cloud-Init?
+
+| Ohne Cloud-Init | Mit Cloud-Init |
+|---|---|
+| Manuelles Login per SSH nach dem Start | Server ist nach dem Boot fertig eingerichtet |
+| Fehleranfällig, nicht reproduzierbar | Gleiche Konfiguration = gleiches Ergebnis |
+| Schlecht skalierbar | Beliebig viele Instanzen identisch |
+| Dokumentation getrennt vom Setup | Konfiguration *ist* die Dokumentation |
+
+> Grundlage für **Infrastructure as Code** und Automatisierung
+
 ---
 # Möglichkeiten mit cloud-init
 
@@ -83,7 +98,84 @@ a {
 - Abarbeiten von Skripten
 - ...
 
+---
 
+## Das `#cloud-config`-Format
+
+- User-Data im **YAML**-Format
+- Die **erste Zeile** muss exakt `#cloud-config` lauten
+- Einrückung mit **Leerzeichen**, keine Tabs
+- Jeder Schlüssel steuert ein Modul
+
+```yaml
+#cloud-config
+hostname: web01
+timezone: Europe/Zurich
+package_update: true
+```
+
+---
+
+## Wichtige Module
+
+| Modul | Zweck |
+|---|---|
+| `users` / `groups` | Benutzer und Gruppen anlegen |
+| `ssh_authorized_keys` | SSH-Schlüssel hinterlegen |
+| `package_update` / `package_upgrade` | Paketquellen aktualisieren |
+| `packages` | Software installieren |
+| `write_files` | Dateien mit Inhalt anlegen |
+| `runcmd` | Befehle beim ersten Boot ausführen |
+| `hostname` / `timezone` | Systemeinstellungen |
+
+---
+
+## Beispiel: Benutzer anlegen
+
+```yaml
+#cloud-config
+users:
+  - name: oli
+    groups: sudo
+    shell: /bin/bash
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    ssh_authorized_keys:
+      - ssh-ed25519 AAAAC3Nza... oli@laptop
+```
+
+- Login nur per **SSH-Key**, kein Passwort
+- `sudo`-Rechte ohne Passwortabfrage
+
+---
+
+## Praxisbeispiel: Webserver
+
+```yaml
+#cloud-config
+package_update: true
+packages:
+  - nginx
+write_files:
+  - path: /var/www/html/index.html
+    content: |
+      <h1>Hallo aus Cloud-Init!</h1>
+runcmd:
+  - systemctl enable --now nginx
+```
+
+Nach dem Start: Webserver läuft und liefert die eigene Startseite aus.
+
+---
+
+## Cloud-Init verwenden
+
+**AWS EC2** – User-Data beim Start angeben:
+
+```bash
+aws ec2 run-instances --image-id ami-xxxx \
+  --instance-type t3.micro \
+  --user-data file://cloud-config.yaml
+```
 ---
 
 # Weitere Informationen
@@ -91,8 +183,3 @@ a {
 - [Informationen cloud-init von IONOS](https://www.ionos.de/hilfe/server-cloud-infrastructure/serveradministration/serverkonfiguration-mit-cloud-init-allgemeine-informationen/)
 - [Warum ist cloud-init so cool](https://contabo.com/blog/de/was-ist-cloud-init/)
 - [cloud-init Dokumentation](https://cloudinit.readthedocs.io/en/latest/)
-
-
-
-
-
